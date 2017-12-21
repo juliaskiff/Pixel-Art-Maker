@@ -30,15 +30,21 @@ function addColor(){
 };
 
 function clearCell (){
-	$('#submit_button').on('click', function(){
+	$('#reset_button').on('click', function(){
 		$('.cell').css('background-color', 'white');
 	});	
 };
 	
+function deleteGrid(){
+	$('#delete_button').on('click', function(){
+		$('#pixel_canvas').remove('<tr><td></td></tr>');
+	})	
+};	
+
 makeGrid();
 addColor();
 clearCell();
-
+deleteGrid();
 
 
 
