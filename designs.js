@@ -3,7 +3,7 @@
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+const grid = function makeGrid (){
 
 
 $('#submit_button').on('click', function(){
@@ -37,11 +37,11 @@ function clearCell (){
 	
 function deleteGrid(){
 	$('#delete_button').on('click', function(){
-		$('#pixel_canvas').remove('<tr><td></td></tr>');
+		$('#pixel_canvas').remove(grid());
 	})	
 };	
 
-makeGrid();
+grid();
 addColor();
 clearCell();
 deleteGrid();

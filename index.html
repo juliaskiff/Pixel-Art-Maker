@@ -15,16 +15,19 @@
         <input type="number" id="input_height" name="height" min="1" value="1">
         Grid Width:
         <input type="number" id="input_width" name="width" min="1" value="1">
-        <input type="submit" id="submit_button">
-        <button id="delete_button">Delete</button>
+        <input type="submit" id="submit_button" class="buttons">
+        
     </form>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
-    <button id="reset_button">Reset</button>
+    
 
     <h2>Design Canvas</h2>
+    <input type="button" value="Reset"  id="reset_button" class="buttons"></input>
+    <input type="button" value="Delete" id="delete_button" class="buttons"></input>
     <table id="pixel_canvas"></table>
+    
 
     <script src="designs.js"></script>
 </body>

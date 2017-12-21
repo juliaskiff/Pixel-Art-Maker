@@ -38,3 +38,10 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+.buttons{
+    background-color: #669999;
+    opacity: 0.9;
+    border-radius: 15px;
+    font-size: 16px;
+}
